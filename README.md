@@ -178,71 +178,6 @@ Her workflow çalışmasında şu artifact'lar oluşturulur:
 - `allure-results-webkit`
 - `allure-report`
 
-## Yeni Test Ekleme
-
-### 1. Page Object Oluştur
-
-```typescript
-// src/pages/example.page.ts
-import { Page, Locator, expect } from '@playwright/test';
-import { BasePage } from './base.page';
-
-export class ExamplePage extends BasePage {
-  readonly url = '/example';
-
-  private readonly submitButton: Locator;
-
-  constructor(page: Page) {
-    super(page);
-    this.submitButton = this.getByRole('button', { name: 'Submit' });
-  }
-
-  async clickSubmit(): Promise<void> {
-    await this.submitButton.click();
-  }
-}
-```
-
-### 2. Fixture'a Ekle
-
-```typescript
-// src/fixtures/base.fixture.ts
-import { ExamplePage } from '../pages/example.page';
-
-type Pages = {
-  // ... mevcut page'ler
-  examplePage: ExamplePage;
-};
-
-export const test = base.extend<Pages>({
-  // ... mevcut fixture'lar
-  examplePage: async ({ page }, use) => {
-    await use(new ExamplePage(page));
-  },
-});
-```
-
-### 3. Test Yaz
-
-```typescript
-// tests/example/example.spec.ts
-import { test, expect } from '../../src/fixtures/base.fixture';
-import * as allure from 'allure-js-commons';
-
-test.describe('Example Tests', () => {
-  test('should do something', async ({ examplePage }) => {
-    allure.epic('Example');
-    allure.feature('Example Feature');
-    allure.severity('normal');
-
-    await examplePage.navigate();
-    await examplePage.clickSubmit();
-
-    // assertions...
-  });
-});
-```
-
 ## Faydalı Komutlar
 
 ```bash
@@ -258,7 +193,3 @@ npx playwright test --workers=4
 # Trace ile koş (hata ayıklama için)
 npx playwright test --trace on
 ```
-
-## Lisans
-
-MIT
