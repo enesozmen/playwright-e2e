@@ -1,13 +1,17 @@
 import { test, expect } from '../src/fixtures/base.fixture';
 import * as allure from 'allure-js-commons';
 
-test('should fail intentionally', async ({ page }) => {
-  allure.epic('Test');
-  allure.feature('Failure Test');
-  allure.severity('normal');
+test.describe('Intentional Failure Test', () => {
+  test.beforeEach(async ({ loginPage }) => {
+    allure.epic('Demo');
+    allure.feature('Screenshot on Failure');
+    await loginPage.navigate();
+  });
 
-  await page.goto('https://mixcurb.com/login');
+  test('should fail and capture screenshot', async ({ page }) => {
+    allure.severity('normal');
+    allure.story('Failure Screenshot Demo');
 
-  // Bu element yok, test fail olacak
-  await expect(page.locator('#non-existent-element')).toBeVisible({ timeout: 3000 });
+    await expect(page.locator('#non-existent-element')).toBeVisible({ timeout: 3000 });
+  });
 });
