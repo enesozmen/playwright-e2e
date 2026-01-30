@@ -72,7 +72,6 @@ jobs:
         env:
           CI: true
           BASE_URL: ${{ vars.BASE_URL || 'https://mixcurb.com' }}
-          API_URL: ${{ vars.API_URL || 'https://mixcurb.com' }}
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
 
