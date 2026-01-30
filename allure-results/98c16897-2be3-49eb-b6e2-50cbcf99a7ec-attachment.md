@@ -1,0 +1,418 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e13]: "-- / --"
+    - generic [ref=e14]:
+      - button "Previous Track" [ref=e15] [cursor=pointer]:
+        - img
+      - button "Toggle Play and Pause" [ref=e16] [cursor=pointer]:
+        - img
+      - button "Next Track" [ref=e17] [cursor=pointer]:
+        - img
+    - generic [ref=e18]:
+      - button "Volume Rocker" [ref=e20] [cursor=pointer]:
+        - img
+      - button "Repeat Button" [ref=e21] [cursor=pointer]:
+        - img
+      - button "Playlist Button" [ref=e22] [cursor=pointer]:
+        - img
+  - generic [ref=e23]:
+    - navigation [ref=e25]:
+      - list [ref=e26]:
+        - listitem [ref=e27]:
+          - link "Heading logo" [ref=e28] [cursor=pointer]:
+            - /url: /
+            - img "logo" [ref=e29]
+        - listitem [ref=e30]:
+          - link "Home" [ref=e31] [cursor=pointer]:
+            - /url: /home
+        - listitem [ref=e32]:
+          - link "Feed" [ref=e33] [cursor=pointer]:
+            - /url: /feed
+        - listitem [ref=e34]:
+          - link "Beats" [ref=e35] [cursor=pointer]:
+            - /url: /beats
+        - listitem [ref=e36]:
+          - link "Songs" [ref=e37] [cursor=pointer]:
+            - /url: /songs
+        - listitem [ref=e38]:
+          - link "Search" [ref=e39] [cursor=pointer]:
+            - /url: /search
+        - listitem [ref=e40]:
+          - generic [ref=e42] [cursor=pointer]:
+            - img
+            - generic [ref=e43]: $0.00
+        - listitem [ref=e44]:
+          - generic [ref=e45]:
+            - img "enesozmen profile picture" [ref=e47] [cursor=pointer]
+            - list [ref=e49]:
+              - listitem [ref=e50] [cursor=pointer]:
+                - link "enesozmen profile picture Profile" [ref=e51]:
+                  - /url: /enesozmen
+                  - img "enesozmen profile picture" [ref=e52]
+                  - text: Profile
+              - listitem [ref=e53] [cursor=pointer]:
+                - link "Account" [ref=e54]:
+                  - /url: /account/edit
+                  - img
+                  - text: Account
+              - listitem [ref=e55] [cursor=pointer]:
+                - link "Dashboard" [ref=e56]:
+                  - /url: /dashboard/overview
+                  - img
+                  - text: Dashboard
+              - listitem [ref=e57] [cursor=pointer]:
+                - link "1 Notifications" [ref=e58]:
+                  - /url: /account/notifications
+                  - img
+                  - text: 1 Notifications
+              - listitem [ref=e59] [cursor=pointer]:
+                - img
+                - text: Log Out
+    - generic [ref=e61]:
+      - list [ref=e62]:
+        - listitem [ref=e63] [cursor=pointer]:
+          - generic [ref=e64]:
+            - img "Moonlight artwork" [ref=e65]
+            - generic [ref=e67]:
+              - generic [ref=e68]: New on Mixcurb
+              - generic [ref=e69]:
+                - generic [ref=e70]: Moonlight
+                - generic [ref=e71]: mixcurb
+            - img
+      - generic [ref=e72]:
+        - heading "Trending Beats" [level=2] [ref=e73]
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77] [cursor=pointer]:
+                - img "My Bad Girl artwork" [ref=e78]
+                - img
+              - generic [ref=e79]:
+                - link "My Bad Girl" [ref=e81] [cursor=pointer]:
+                  - /url: /brentindavis/beats/my-bad-girl
+                - link "brentindavis" [ref=e83] [cursor=pointer]:
+                  - /url: /brentindavis
+          - listitem [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86] [cursor=pointer]:
+                - img "Destiny artwork" [ref=e87]
+                - img
+              - generic [ref=e88]:
+                - link "Destiny" [ref=e90] [cursor=pointer]:
+                  - /url: /mixcurb/beats/destiny
+                - link "mixcurb" [ref=e92] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95] [cursor=pointer]:
+                - img "Albuquerque artwork" [ref=e96]
+                - img
+              - generic [ref=e97]:
+                - link "Albuquerque" [ref=e99] [cursor=pointer]:
+                  - /url: /mixcurb/beats/albuquerque
+                - link "mixcurb" [ref=e101] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e102]:
+            - generic [ref=e103]:
+              - generic [ref=e104] [cursor=pointer]:
+                - img "Cathedral artwork" [ref=e105]
+                - img
+              - generic [ref=e106]:
+                - link "Cathedral" [ref=e108] [cursor=pointer]:
+                  - /url: /mixcurb/beats/cathedral
+                - link "mixcurb" [ref=e110] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113] [cursor=pointer]:
+                - img "Graduation artwork" [ref=e114]
+                - img
+              - generic [ref=e115]:
+                - link "Graduation" [ref=e117] [cursor=pointer]:
+                  - /url: /mixcurb/beats/graduation
+                - link "mixcurb" [ref=e119] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122] [cursor=pointer]:
+                - img "Serenity artwork" [ref=e123]
+                - img
+              - generic [ref=e124]:
+                - link "Serenity" [ref=e126] [cursor=pointer]:
+                  - /url: /mixcurb/beats/serenity
+                - link "mixcurb" [ref=e128] [cursor=pointer]:
+                  - /url: /mixcurb
+      - generic [ref=e129]:
+        - heading "Trending Songs" [level=2] [ref=e130]
+        - list [ref=e131]:
+          - listitem [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134] [cursor=pointer]:
+                - img "Lightspeed artwork" [ref=e135]
+                - img
+              - generic [ref=e136]:
+                - link "Lightspeed" [ref=e138] [cursor=pointer]:
+                  - /url: /mixcurb/albums/hello-world/lightspeed
+                - link "mixcurb" [ref=e140] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143] [cursor=pointer]:
+                - img "Run Away artwork" [ref=e144]
+                - img
+              - generic [ref=e145]:
+                - link "Run Away" [ref=e147] [cursor=pointer]:
+                  - /url: /mixcurb/songs/run-away
+                - link "mixcurb" [ref=e149] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e150]:
+            - generic [ref=e151]:
+              - generic [ref=e152] [cursor=pointer]:
+                - img "Smoke artwork" [ref=e153]
+                - img
+              - generic [ref=e154]:
+                - link "Smoke" [ref=e156] [cursor=pointer]:
+                  - /url: /mixcurb/songs/smoke
+                - link "mixcurb" [ref=e158] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161] [cursor=pointer]:
+                - img "Visibility artwork" [ref=e162]
+                - img
+              - generic [ref=e163]:
+                - link "Visibility" [ref=e165] [cursor=pointer]:
+                  - /url: /mixcurb/songs/visibility
+                - link "mixcurb" [ref=e167] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e168]:
+            - generic [ref=e169]:
+              - generic [ref=e170] [cursor=pointer]:
+                - img "Train artwork" [ref=e171]
+                - img
+              - generic [ref=e172]:
+                - link "Train" [ref=e174] [cursor=pointer]:
+                  - /url: /mixcurb/songs/train
+                - link "mixcurb" [ref=e176] [cursor=pointer]:
+                  - /url: /mixcurb
+          - listitem [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179] [cursor=pointer]:
+                - img "Skeleton artwork" [ref=e180]
+                - img
+              - generic [ref=e181]:
+                - link "Skeleton" [ref=e183] [cursor=pointer]:
+                  - /url: /mixcurb/songs/skeleton
+                - link "mixcurb" [ref=e185] [cursor=pointer]:
+                  - /url: /mixcurb
+      - generic [ref=e186]:
+        - generic [ref=e187]:
+          - heading "Top Beats" [level=2] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190] [cursor=pointer]:
+              - generic [ref=e191]:
+                - generic [ref=e192]:
+                  - img "My Bad Girl artwork" [ref=e193]
+                  - img
+                - generic [ref=e194]:
+                  - link "My Bad Girl" [ref=e196]:
+                    - /url: /brentindavis/beats/my-bad-girl
+                  - link "brentindavis" [ref=e198]:
+                    - /url: /brentindavis
+                - list [ref=e200]:
+                  - listitem [ref=e201]:
+                    - img
+                  - listitem [ref=e202]:
+                    - img
+                    - text: Add
+            - listitem [ref=e203] [cursor=pointer]:
+              - generic [ref=e204]:
+                - generic [ref=e205]:
+                  - img "Moonlight artwork" [ref=e206]
+                  - img
+                - generic [ref=e207]:
+                  - link "Moonlight" [ref=e209]:
+                    - /url: /mixcurb/beats/moonlight
+                  - link "mixcurb" [ref=e211]:
+                    - /url: /mixcurb
+                - list [ref=e213]:
+                  - listitem [ref=e214]:
+                    - img
+                  - listitem [ref=e215]:
+                    - img [ref=e216]
+                  - listitem [ref=e219]:
+                    - img
+                    - text: Add
+            - listitem [ref=e220] [cursor=pointer]:
+              - generic [ref=e221]:
+                - generic [ref=e222]:
+                  - img "Albuquerque artwork" [ref=e223]
+                  - img
+                - generic [ref=e224]:
+                  - link "Albuquerque" [ref=e226]:
+                    - /url: /mixcurb/beats/albuquerque
+                  - link "mixcurb" [ref=e228]:
+                    - /url: /mixcurb
+                - list [ref=e230]:
+                  - listitem [ref=e231]:
+                    - img
+                  - listitem [ref=e232]:
+                    - img
+                    - text: Add
+            - listitem [ref=e233] [cursor=pointer]:
+              - generic [ref=e234]:
+                - generic [ref=e235]:
+                  - img "Twilight artwork" [ref=e236]
+                  - img
+                - generic [ref=e237]:
+                  - link "Twilight" [ref=e239]:
+                    - /url: /mixcurb/beats/twilight
+                  - link "mixcurb" [ref=e241]:
+                    - /url: /mixcurb
+                - list [ref=e243]:
+                  - listitem [ref=e244]:
+                    - img
+                  - listitem [ref=e245]:
+                    - img
+                    - text: Add
+            - listitem [ref=e246] [cursor=pointer]:
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - img "Nightmare artwork" [ref=e249]
+                  - img
+                - generic [ref=e250]:
+                  - link "Nightmare" [ref=e252]:
+                    - /url: /mixcurb/beats/nightmare
+                  - link "mixcurb" [ref=e254]:
+                    - /url: /mixcurb
+                - list [ref=e256]:
+                  - listitem [ref=e257]:
+                    - img
+                  - listitem [ref=e258]:
+                    - img
+                    - text: Add
+            - listitem [ref=e259] [cursor=pointer]:
+              - generic [ref=e260]:
+                - generic [ref=e261]:
+                  - img "Orbital artwork" [ref=e262]
+                  - img
+                - generic [ref=e263]:
+                  - link "Orbital" [ref=e265]:
+                    - /url: /mixcurb/beats/orbital
+                  - link "mixcurb" [ref=e267]:
+                    - /url: /mixcurb
+                - list [ref=e269]:
+                  - listitem [ref=e270]:
+                    - img
+                  - listitem [ref=e271]:
+                    - img
+                    - text: Add
+        - generic [ref=e272]:
+          - heading "Top Songs" [level=2] [ref=e273]
+          - list [ref=e274]:
+            - listitem [ref=e275] [cursor=pointer]:
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - img "Lightspeed artwork" [ref=e278]
+                  - img
+                - generic [ref=e279]:
+                  - link "Lightspeed" [ref=e281]:
+                    - /url: /mixcurb/albums/hello-world/lightspeed
+                  - link "mixcurb" [ref=e283]:
+                    - /url: /mixcurb
+                - list [ref=e285]:
+                  - listitem [ref=e286]:
+                    - img
+                  - listitem [ref=e287]:
+                    - img
+                    - text: $1.29
+            - listitem [ref=e288] [cursor=pointer]:
+              - generic [ref=e289]:
+                - generic [ref=e290]:
+                  - img "Run Away artwork" [ref=e291]
+                  - img
+                - generic [ref=e292]:
+                  - link "Run Away" [ref=e294]:
+                    - /url: /mixcurb/songs/run-away
+                  - link "mixcurb" [ref=e296]:
+                    - /url: /mixcurb
+                - list [ref=e298]:
+                  - listitem [ref=e299]:
+                    - img
+                  - listitem [ref=e300]:
+                    - img
+                    - text: $1.29
+            - listitem [ref=e301] [cursor=pointer]:
+              - generic [ref=e302]:
+                - generic [ref=e303]:
+                  - img "Smoke artwork" [ref=e304]
+                  - img
+                - generic [ref=e305]:
+                  - link "Smoke" [ref=e307]:
+                    - /url: /mixcurb/songs/smoke
+                  - link "mixcurb" [ref=e309]:
+                    - /url: /mixcurb
+                - list [ref=e311]:
+                  - listitem [ref=e312]:
+                    - img
+                  - listitem [ref=e313]:
+                    - img
+                    - text: $1.29
+            - listitem [ref=e314] [cursor=pointer]:
+              - generic [ref=e315]:
+                - generic [ref=e316]:
+                  - img "Visibility artwork" [ref=e317]
+                  - img
+                - generic [ref=e318]:
+                  - link "Visibility" [ref=e320]:
+                    - /url: /mixcurb/songs/visibility
+                  - link "mixcurb" [ref=e322]:
+                    - /url: /mixcurb
+                - list [ref=e324]:
+                  - listitem [ref=e325]:
+                    - img
+                  - listitem [ref=e326]:
+                    - img
+                    - text: $1.29
+            - listitem [ref=e327] [cursor=pointer]:
+              - generic [ref=e328]:
+                - generic [ref=e329]:
+                  - img "Train artwork" [ref=e330]
+                  - img
+                - generic [ref=e331]:
+                  - link "Train" [ref=e333]:
+                    - /url: /mixcurb/songs/train
+                  - link "mixcurb" [ref=e335]:
+                    - /url: /mixcurb
+                - list [ref=e337]:
+                  - listitem [ref=e338]:
+                    - img
+                  - listitem [ref=e339]:
+                    - img
+                    - text: $1.29
+            - listitem [ref=e340] [cursor=pointer]:
+              - generic [ref=e341]:
+                - generic [ref=e342]:
+                  - img "Skeleton artwork" [ref=e343]
+                  - img
+                - generic [ref=e344]:
+                  - link "Skeleton" [ref=e346]:
+                    - /url: /mixcurb/songs/skeleton
+                  - link "mixcurb" [ref=e348]:
+                    - /url: /mixcurb
+                - list [ref=e350]:
+                  - listitem [ref=e351]:
+                    - img
+                  - listitem [ref=e352]:
+                    - img
+                    - text: $1.29
+  - generic [ref=e354]:
+    - generic [ref=e355] [cursor=pointer]: ×
+    - text: Logged in successfully.
+  - generic [ref=e356] [cursor=pointer]:
+    - img
+    - text: Feedback
+```

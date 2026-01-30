@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e13]: "-- / --"
+    - generic [ref=e14]:
+      - button "Previous Track" [ref=e15] [cursor=pointer]:
+        - img
+      - button "Toggle Play and Pause" [ref=e16] [cursor=pointer]:
+        - img
+      - button "Next Track" [ref=e17] [cursor=pointer]:
+        - img
+    - generic [ref=e18]:
+      - button "Volume Rocker" [ref=e20] [cursor=pointer]:
+        - img
+      - button "Repeat Button" [ref=e21] [cursor=pointer]:
+        - img
+      - button "Playlist Button" [ref=e22] [cursor=pointer]:
+        - img
+  - generic [ref=e24]:
+    - link "Mixcurb logo" [ref=e26] [cursor=pointer]:
+      - /url: /
+      - img "Mixcurb logo" [ref=e27]
+    - generic [ref=e28]: Log in to Mixcurb
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - textbox "elonmusk" [ref=e31]
+        - generic [ref=e32]: Username or Email
+      - generic [ref=e33]:
+        - img [ref=e35] [cursor=pointer]
+        - textbox "********" [ref=e37]
+        - generic [ref=e38]: Password
+      - button "Log in" [ref=e41] [cursor=pointer]
+      - link "Forgot your password?" [ref=e42] [cursor=pointer]:
+        - /url: /forgot
+    - link "Need an account?" [ref=e44] [cursor=pointer]:
+      - /url: /signup
+  - generic [ref=e47] [cursor=pointer]: ×
+  - generic [ref=e48] [cursor=pointer]:
+    - img
+    - text: Feedback
+```
