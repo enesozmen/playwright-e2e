@@ -6,6 +6,27 @@ on:
   pull_request:
     branches: [main, master]
   workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Test suite to run'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - smoke
+          - login
+          - logout
+      browser:
+        description: 'Browser to test'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - chromium
+          - firefox
+          - webkit
 
 permissions:
   contents: write
@@ -20,7 +41,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project: [chromium, firefox, webkit]
+        project: ${{ github.event.inputs.browser == 'all' && fromJson('["chromium", "firefox", "webkit"]') || fromJson(format('["{0}"]', github.event.inputs.browser || 'chromium')) }}
 
     steps:
       - uses: actions/checkout@v4
@@ -37,7 +58,16 @@ jobs:
         run: npx playwright install --with-deps ${{ matrix.project }}
 
       - name: Run Playwright tests
-        run: npx playwright test --project=${{ matrix.project }}
+        run: |
+          if [ "${{ github.event.inputs.test_suite }}" == "all" ] || [ -z "${{ github.event.inputs.test_suite }}" ]; then
+            npx playwright test --project=${{ matrix.project }}
+          elif [ "${{ github.event.inputs.test_suite }}" == "smoke" ]; then
+            npx playwright test tests/smoke --project=${{ matrix.project }}
+          elif [ "${{ github.event.inputs.test_suite }}" == "login" ]; then
+            npx playwright test tests/auth/login.spec.ts --project=${{ matrix.project }}
+          elif [ "${{ github.event.inputs.test_suite }}" == "logout" ]; then
+            npx playwright test tests/auth/logout.spec.ts --project=${{ matrix.project }}
+          fi
         continue-on-error: true
         env:
           CI: true
