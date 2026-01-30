@@ -15,7 +15,12 @@
     "allure:open": "allure open allure-report",
     "allure:report": "npm run allure:generate && npm run allure:open"
   },
-  "keywords": ["playwright", "e2e", "automation", "testing"],
+  "keywords": [
+    "playwright",
+    "e2e",
+    "automation",
+    "testing"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
@@ -23,6 +28,7 @@
     "@faker-js/faker": "^10.2.0",
     "@playwright/test": "^1.58.0",
     "@types/node": "^25.1.0",
+    "allure-commandline": "^2.36.0",
     "allure-playwright": "^3.4.5",
     "dotenv": "^17.2.3",
     "playwright": "^1.58.0",
